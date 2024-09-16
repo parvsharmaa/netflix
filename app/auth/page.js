@@ -29,10 +29,7 @@ const Auth = () => {
     e.preventDefault();
 
     try {
-      const url =
-        variant === 'login'
-          ? `http://localhost:8080/api/auth/login`
-          : `http://localhost:8080/api/auth/register`;
+      const url = `http://localhost:8080/api/auth/${variant}`;
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -47,12 +44,11 @@ const Auth = () => {
         const data = await response.json();
 
         if (data?.token) {
-          // on login, redirect to home
           login(data);
           router.push('/');
         } else {
-          // on register, redirect to login
-          router.push('/auth');
+          alert('Registration successful! Please log in to continue.');
+          toggleVariant();
         }
       } else {
         const error = await response.json();

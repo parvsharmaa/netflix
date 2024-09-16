@@ -1,5 +1,5 @@
-const API_KEY = process.env.OMDB_API_KEY || 'a5f6c076';
-const BASE_URL = process.env.OMDB_BASE_URL || 'https://www.omdbapi.com';
+const API_KEY = 'a5f6c076';
+const BASE_URL = 'https://www.omdbapi.com';
 
 // OMDb API requests
 const requests = {
