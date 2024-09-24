@@ -29,7 +29,7 @@ const Auth = () => {
     e.preventDefault();
 
     try {
-      const url = `http://localhost:8080/api/auth/${variant}`;
+      const url = `https://netflix-backend-ndsv.onrender.com/api/auth/${variant}`;
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

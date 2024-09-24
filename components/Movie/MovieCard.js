@@ -26,7 +26,7 @@ const MovieCard = ({ data }) => {
     try {
       const token = localStorage.getItem('accessToken');
       const response = await fetch(
-        `http://localhost:8080/api/user/${userData.id}`,
+        `https://netflix-backend-ndsv.onrender.com/api/user/${userData.id}`,
         {
           method: 'PATCH',
           headers: {
@@ -64,7 +64,7 @@ const MovieCard = ({ data }) => {
       );
 
       const response = await fetch(
-        `http://localhost:8080/api/user/${userData.id}`,
+        `https://netflix-backend-ndsv.onrender.com/api/user/${userData.id}`,
         {
           method: 'PATCH',
           headers: {
