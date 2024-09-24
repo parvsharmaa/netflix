@@ -12,7 +12,7 @@ const Billboard = () => {
         className='w-full h-[56.25vw] object-cover brightness=[60%]'
         poster='https://m.media-amazon.com/images/M/MV5BOTAzZGQyNWQtZTg4Yi00OTRhLTg3ZjktOTUzNDJjMmIwNjVhXkEyXkFqcGdeQXVyNTc0NjY1ODk@._V1_.jpg'
         src={
-          'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+          'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
         }
       ></video>
       <div className='absolute top-[30%] md:top-[40%] ml-4 md:ml-16'>
